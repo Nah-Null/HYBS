@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://github.com/Nah-Null/Gallery/blob/main/well%20done.jpg?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+a {
+    font-family: 'Courier New', Courier, monospace;
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #000000; /* สีที่ใช้เมื่อ hover */
+}
+button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #000000; /* สีที่ใช้เมื่อ hover */
+}
+.navbar-toggler {
+    background-color: #000000;
+    border: none;
+    border-radius: 50%;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
