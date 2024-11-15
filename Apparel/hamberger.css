@@ -1,0 +1,58 @@
+/* ซ่อน checkbox ที่แท้จริง */
+.navbar-toggler input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* สไตล์ปุ่ม navbar-toggler */
+.navbar-toggler {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+/* สไตล์ checkmark */
+.checkmark {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.checkmark span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+
+.checkmark span:nth-child(1) {
+    top: 8px;
+}
+
+.checkmark span:nth-child(2) {
+    top: 14px;
+}
+
+.checkmark span:nth-child(3) {
+    top: 20px;
+}
+
+/* สไตล์เมื่อ checkbox ถูกเลือก */
+.navbar-toggler input:checked + .checkmark span:nth-child(1) {
+    top: 14px;
+    transform: rotate(45deg);
+}
+
+.navbar-toggler input:checked + .checkmark span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler input:checked + .checkmark span:nth-child(3) {
+    top: 14px;
+    transform: rotate(-45deg);
+}
