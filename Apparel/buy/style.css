@@ -1,0 +1,117 @@
+body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('https://github.com/Nah-Null/Gallery/blob/main/well%20done.jpg?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: 'Courier New', Courier, monospace;
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #e91e63; /* เพิ่มสีที่สวยงามเมื่อ hover */
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px; /* เพิ่มช่องว่างด้านบนของปุ่ม */
+}
+
+button:hover {
+    background-color: #333; /* เปลี่ยนสี hover */
+    border: 2px solid #fff; /* เพิ่มกรอบสีขาว */
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* จัดเรียงแนวนอน */
+    flex-wrap: wrap; /* ทำให้ยืดหยุ่นเมื่อหน้าจอแคบลง */
+    gap: 20px; /* เพิ่มระยะห่างระหว่างรูปภาพและรายละเอียด */
+    padding: 40px;
+    background: rgba(232,162,234, 0.7);
+    border-radius: 10px;
+    max-width: 1200px; /* จำกัดขนาดของ container */
+    margin: 0 auto; /* จัดให้อยู่กลางหน้า */
+}
+
+.product-image {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product-details {
+    flex: 1;
+    max-width: 400px;
+    text-align: left;
+}
+
+.product-details h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #f8f9fa;
+}
+
+.product-details .price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #e91e63;
+    margin: 10px 0;
+}
+
+.product-details .description {
+    font-size: 18px;
+    margin: 10px 0;
+    line-height: 1.6;
+    color: #f8f9fa;
+}
+
+/* เพิ่มการรองรับมือถือ */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column; /* เปลี่ยนการจัดวางจากแนวนอนเป็นแนวตั้ง */
+        padding: 20px;
+    }
+
+    .product-image img {
+        max-width: 80%; /* ทำให้ขนาดของรูปภาพเล็กลงในมือถือ */
+    }
+
+    .product-details h2 {
+        font-size: 24px;
+    }
+
+    .product-details .price {
+        font-size: 18px;
+    }
+
+    .product-details .description {
+        font-size: 16px;
+    }
+}

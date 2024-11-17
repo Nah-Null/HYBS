@@ -7,14 +7,15 @@ body {
     font-family: 'Arial', sans-serif;
 }
 a {
-    font-family: 'Courier New', Courier, monospace;
-    color: #f8f9fa;
     text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
     transition: color 0.3s ease-in-out;
 }
 
 a:hover {
-    color: #000000; /* สีที่ใช้เมื่อ hover */
+    text-decoration: none;  /* ไม่มีเส้นใต้เมื่อ hover */
+    color: #e91e63; /* สีที่เปลี่ยนเมื่อ hover */
 }
 button {
     background-color: #000000;

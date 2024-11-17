@@ -1,0 +1,77 @@
+.navbar {
+    background-image: url('https://github.com/Nah-Null/Gallery/blob/main/well%20done.jpg?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
+    padding: 10px 0;
+    color: #ffffff;
+}
+
+.navbar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1; /* ปรับเป็น -1 เพื่อให้พื้นหลังอยู่ด้านล่างสุด */
+}
+
+.navbar .navbar-nav {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-nav .nav-link {
+    color: #f8f9fa;
+    font-size: 16px;
+    margin-right: 20px;
+    transition: color 0.3s ease-in-out;
+    position: relative; /* ปรับตำแหน่งเพื่อให้ z-index ทำงาน */
+    z-index: 2; /* ทำให้ลิงก์อยู่ด้านบน */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.navbar_a {
+    margin: auto;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.navbar_b {
+    background-color: rgba(228, 207, 207, 0.9);
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: #000;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+}
+
+.navbar_b a {
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar_b a:hover {
+    color: #333;
+}
+
+.navbar-toggler {
+    background-color: #000000;
+    border: none;
+    border-radius: 50%;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
