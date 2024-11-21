@@ -53,8 +53,9 @@ function check_up() {
     // ตรวจสอบว่า username และ password ตรงกันหรือไม่
     if (storedUsername === user && storedPassword === pass) {
         // หากข้อมูลตรงกันให้ไปยัง URL ถัดไป
-        // open_member();  สลับไปยังฟอร์มสมาชิก
-        window.location.replace("https://nah-null.github.io/HYBS_mumber/Well%20Done/well%20done.html");
+        alert("เข้าสู่ระบบสำเร็จ")
+        open_member();  //สลับไปยังฟอร์มสมาชิก
+        // window.location.replace("https://nah-null.github.io/HYBS_mumber/Well%20Done/well%20done.html");
     } else {
         // หากข้อมูลไม่ตรง ให้แจ้งเตือนผู้ใช้
         alert("ข้อมูลที่กรอกไม่ถูกต้อง กรุณาลองใหม่อีกครั้ง!");
