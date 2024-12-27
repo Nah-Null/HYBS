@@ -1,0 +1,146 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), 
+    url('https://github.com/Nah-Null/Gallery/blob/main/well%20done.jpg?raw=true');
+    background-size: cover;
+    color: white;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* ตั้งให้สูงเต็มจอ */
+}
+
+.container {
+    font-family: 'Courier New', Courier, monospace;
+
+    max-width: 500px;
+    background: rgba(251, 156, 251, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.form-container {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+
+    margin-bottom: 20px;
+}
+
+label {
+    font-family: 'Courier New', Courier, monospace;
+
+    margin-right: 80%;
+    color: rgb(232, 162, 234);
+}
+
+input {
+    font-family: 'Courier New', Courier, monospace;
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* From Uiverse.io by Cornerstone-04 */ 
+.box {
+    width: 140px;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-top: 20%;
+  }
+  
+  .box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  .box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .box:hover {
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.5);
+  }
+  
+  .box:hover:before {
+    border-color: rgb(232, 162, 234);
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .box:hover:after {
+    border-color: rgb(232, 162, 234);
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+  
+  button {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+
+a {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+ .mb-3{
+    margin: auto;
+ }
+
+ p{
+    color: white;
+ }
+
+
+ .full-rounded {
+    border-radius: 2em;
+   }
